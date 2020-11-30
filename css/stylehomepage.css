@@ -525,3 +525,9 @@ select {
 .lower{
   float: left;
 }
+
+.pp2 p,.lower p {
+  font-size: 20px;
+  color:red;
+  font-family: "ITC Officina Sans Std Book";
+}
