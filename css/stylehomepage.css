@@ -475,7 +475,8 @@ ul.breadcrumb li a:hover {
   margin-right: 5px;
 }
 
-.fa-heart{
+.fa-heart {
+  display: inline-block;
   float: right;
 }
 
