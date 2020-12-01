@@ -44,8 +44,34 @@
 
               <a class="navbar-brand pl-4 py-0" href="#">
                   <b>SHELTOWN.in</b>
-                  <p>Live Like you own it</p>
+                  <p>Live Like You Own It</p>
               </a>
+              <div class="">
+                  <div class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle choose"
+                         href="#"
+                         id="navbarDropdown"
+                         role="button"
+                         data-toggle="dropdown"
+                         aria-haspopup="true"
+                         aria-expanded="false" style="font-weight: bold; font-size: 20px;">
+                          <i class="fas fa-map-marker-alt"></i>Choose City
+                      </a>
+                      <div class="dropdown-menu choose" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Bangalore</a>
+                          <a class="dropdown-item" href="#">Bhopal</a>
+                          <a class="dropdown-item" href="#">Delhi</a>
+                          <a class="dropdown-item" href="#">Ghaziabad</a>
+                          <a class="dropdown-item" href="#">Gurgaon</a>
+                          <a class="dropdown-item" href="#">Indore</a>
+                          <a class="dropdown-item" href="#">Jaipur</a>
+                          <a class="dropdown-item" href="#">Kota</a>
+                          <a class="dropdown-item" href="#">Noida</a>
+                          <a class="dropdown-item" href="#">Pune</a>
+                      </div>
+                  </div>
+              </div>
+
               <div class="col-6">
                   <div class="input-group form-container">
                       <input class="form-control"
@@ -62,35 +88,10 @@
                   </div>
               </div>
 
-              <div class="">
-                  <div class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle choose"
-                         href="#"
-                         id="navbarDropdown"
-                         role="button"
-                         data-toggle="dropdown"
-                         aria-haspopup="true"
-                         aria-expanded="false">
-                          <i class="fas fa-map-marker-alt"></i>Choose City
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Bangalore</a>
-                          <a class="dropdown-item" href="#">Bhopal</a>
-                          <a class="dropdown-item" href="#">Delhi</a>
-                          <a class="dropdown-item" href="#">Ghaziabad</a>
-                          <a class="dropdown-item" href="#">Gurgaon</a>
-                          <a class="dropdown-item" href="#">Indore</a>
-                          <a class="dropdown-item" href="#">Jaipur</a>
-                          <a class="dropdown-item" href="#">Kota</a>
-                          <a class="dropdown-item" href="#">Noida</a>
-                          <a class="dropdown-item" href="#">Pune</a>
-                      </div>
-                  </div>
-              </div>
-
+              
               <div class="nav-item dropdown">
                   <button class="nav-link dropdown btn-search btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                          type="submit" style="background: #2ecab6 !important; ">
+                          type="submit">
                       Sheltie's Plan
                   </button>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -112,11 +113,11 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
-                      <li class="nav-item mr-4 login">
-                          <a class="nav-link" href="#">Sign up </a>
+                      <li class="nav-item mr-4 login ">
+                          <a class="nav-link " href="#">Sign up </a>
                       </li>
-                      <li class="nav-item mr-4 login">
-                          <a class="nav-link " href="#">Sign in </a>
+                      <li class="nav-item mr-4 login  ">
+                          <a class="nav-link" href="#">Sign in </a>
                       </li>
                   </ul>
               </div>
@@ -129,11 +130,13 @@
       <!---Left Sidebar start ---------->
       <div class="d-flex" style=" margin: 0 20px;  margin-top:8%;">
       <div style=" margin: 0;">
-      <nav class="sidebar" style=" border: solid #2ecab6;border-radius: 5px; padding: 0; margin-top:10px!important;" >
-        <div class="text" style="margin-top:0;">
-          <a  style=" border: none !important; text-decoration: none !important;text-align: center; background-color: #2ecab6 !important; color: white !important;" href="#" class="sortby list-group-item list-group-item-dark">Sort By&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+      <nav class="sidebar" style=" border: solid #2ecab6;border-radius: 5px; padding: 0; margin-top:10px!important; display: inline-block;" >
+        <div class="text sorting" style="margin-top:0;">
+          <a  class="filters" href="#">Filters&nbsp;&nbsp;&nbsp;&nbsp;</a>
 
-        <div style="margin:0; margin:15px 0; text-align: center;">Shelties Premium Properties<input type="checkbox" id="checkbox1" style="margin: 10px; margin-top: 4px;"></div>
+          <a href="#" class="sortby ">Sort By&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+
+        <div style="margin:0; margin:15px 0; text-align: center; font-size: 20px;">Sheltie's Shelter<input type="checkbox" id="checkbox1" style="margin: 10px; margin-top: 4px;"><hr></div>
 
         <ul> 
 
@@ -142,10 +145,10 @@
                <span class="fas fa-caret-down first"></span>
             </a>
             <ul class="cat-show">
-              <li>PG/Hostel</li>
-              <li>Apartment</li>
-              <li>Independent House</li>
-              <li>Gated Community</li>
+              <li>PG/Hostel<input type="checkbox" class="check"></li>
+              <li>Apartment<input type="checkbox" class="check"></li>
+              <li>Independent House<input type="checkbox" class="check"></li>
+              <li>Gated Community<input type="checkbox" class="check"></li>
             </ul>
 
           </li>
@@ -154,11 +157,11 @@
                 <span class="fas fa-caret-down second"></span>
             </a>
             <ul class="bhk-show">
-              <li>1 RK</li>
-              <li>1 BHK</li>
-              <li>2 BHK</li>
-              <li>3 BHK</li>
-              <li>4 BHK</li>
+              <li>1 RK<input type="checkbox" class="check"></li>
+              <li>1 BHK<input type="checkbox" class="check"></li>
+              <li>2 BHK<input type="checkbox" class="check"></li>
+              <li>3 BHK<input type="checkbox" class="check"></li>
+              <li>4 BHK<input type="checkbox" class="check"></li>
             </ul>
           </li>
           <li>
@@ -166,10 +169,10 @@
               <span class="fas fa-caret-down third"></span>
             </a>
             <ul class="pg-show">
-              <li>Single</li>
-              <li>Twin</li>
-              <li>Triple</li>
-              <li>Qudroupal</li>
+              <li>Single<input type="checkbox" class="check"></li>
+              <li>Twin<input type="checkbox" class="check"></li>
+              <li>Triple<input type="checkbox" class="check"></li>
+              <li>Qudroupal<input type="checkbox" class="check"></li>
             </ul>
           </li>
           <li>
@@ -177,11 +180,11 @@
             <span class="fas fa-caret-down fourth"></span>
             </a>
             <ul class="floor-show">
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
+              <li>1<input type="checkbox" class="check"></li>
+              <li>2<input type="checkbox" class="check"></li>
+              <li>3<input type="checkbox" class="check"></li>
+              <li>4<input type="checkbox" class="check"></li>
+              <li>5<input type="checkbox" class="check"></li>
             </ul>
           </li>
           <li>
@@ -189,9 +192,9 @@
               <span class="fas fa-caret-down fifth"></span>
             </a>
             <ul class="fur-show">
-              <li>Furnished</li>
-              <li>Semi-furnished</li>
-              <li>Not-furnished</li>
+              <li>Furnished<input type="checkbox" class="check"></li>
+              <li>Semi-furnished<input type="checkbox" class="check"></li>
+              <li>Not-furnished<input type="checkbox" class="check"></li>
             </ul>
           </li>
           <li>
@@ -199,10 +202,10 @@
               <span class="fas fa-caret-down sixth"></span>
             </a>
             <ul class="pro-show">
-              <li>Below 10</li>
-              <li>10-12</li>
-              <li>12-15</li>
-              <li>Above 15</li>
+              <li>Below 10<input type="checkbox" class="check"></li>
+              <li>10-12<input type="checkbox" class="check"></li>
+              <li>12-15<input type="checkbox" class="check"></li>
+              <li>Above 15<input type="checkbox" class="check"></li>
             </ul>
           </li>
         </ul>
@@ -213,7 +216,7 @@
 <!-------------Left Sidebar End ----------->
 <!---Middle card section start-->
 <div style="margin-top: 0;  border: none !important;" class="generalcard">
-  <div class="checkbox" style=" margin-top: 0; border: solid #2ecab6;border-radius: 5px; ">
+  <div class="checkbox" style=" margin-top: 0; border: solid #2ecab6;border-radius: 2px; background-color: white ">
   <div class=" d-flex justify-content-around">
   <div style="margin: 5px;text-align: center;">Couples Privacy<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
   <div style="margin: 5px;text-align: center;">Family zoned <input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
@@ -223,7 +226,7 @@
   <div style="margin: 5px;text-align: center;">Female Only<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
 </div>
   </div>
-  <div>
+  <div >
     <ul class="breadcrumb">
       <li><a href="#">India</a></li>
       <li><a href="#">Delhi</a></li>
@@ -233,7 +236,7 @@
   
 
 
-                          <div style="border: solid #2ecab6 !important;border-radius: 5px; margin:5px 10px; " class="upper d-flex justify-content-between ">
+                          <div style="margin:5px 10px; background-color: white;" class="upper d-flex justify-content-between ">
                             <div  class="image">
                               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
@@ -267,6 +270,12 @@
                                   <span class="sr-only">Next</span>
                                 </a>
                               </div>
+                              <div class="lower2">
+                          <button style=" border : none;background-color: #32a898; color: white; margin: 10px; margin-left: 20px;" type="button" class="btn btn-primary">View more details</button>
+                          <!-- <button style=" border : none;background-color: #32a898; color: white;margin: 10px;" type="button" class="btn btn-primary">Get owner details</button>
+ -->                          <button style=" border : none;background-color: #32a898; color: white;margin: 10px; margin-left: 10px;" type="button" class="btn btn-primary">Book now </button>
+                          <i  class="fa fa-info-circle" style="margin-top: 18px;" data-toggle="modal" data-target="#myModal2"></i>
+                      </div>
                             </div>
                             <div  style="margin:0; margin-top: 10px;margin-right: 10px;" class="pp2 " >
 
@@ -276,8 +285,8 @@
                               <i class="fa fa-map-marker-alt" aria-hidden="true"></i>     Nearby<br><br>
                       <div>
                      <div class="dropdown-container1">
-                          <label >Category</label>
-                      <select style="border: solid #2ecab6;border-radius: 5px; margin: 10px;" name="category" id="category">
+                          <label >Category :</label>
+                      <select name="category" id="category">
                       <option value="none">PG/Hostel</option>
                       <option value="none">Apartment</option>
                       <option value="none">Independent House</option>
@@ -286,8 +295,8 @@
                     </select>
                   </div>
                       <div class="dropdown-container2">
-                      <label>BHK Type</label>
-                      <select style="border: solid #2ecab6;border-radius: 5px;margin: 10px;" name="type" id="type">
+                      <label>BHK Type :</label>
+                      <select name="type" id="type">
                       <option value="none">1 RK</option>
                       <option value="none">1 BHK</option>
                       <option value="none">2 BHK</option>
@@ -298,8 +307,8 @@
                   </div>
 <br>
                         <div class="dropdown-container3">
-                      <label>PG Sharing Type</label>
-                    <select style="border: solid #2ecab6;border-radius: 5px;margin: 10px;" name="sharing" id="sharing">
+                      <label>PG Sharing Type :</label>
+                    <select name="sharing" id="sharing">
                       <option value="none">Single</option>
                       <option value="none">Twin</option>
                       <option value="none">Tripple</option>
@@ -307,8 +316,8 @@
                     </select></div>
 
                         <div class="dropdown-container4">
-                      <label>Floor Preference</label>
-                    <select style="border: solid #2ecab6;border-radius: 5px;margin: 10px;" name="preference" id="preference">
+                      <label>Floor Preference :</label>
+                    <select name="preference" id="preference">
                       <option value="none">1st Floor</option>
                       <option value="none">2nd Floor</option>
                       <option value="none">3rd Floor</option>
@@ -321,8 +330,8 @@
                                <br>
 
                          <div class="dropdown-container5">
-                      <label>Furnishing</label>
-                    <select style="border: solid #2ecab6;border-radius: 5px;margin: 10px;" name="furnish" id="furnish">
+                      <label>Furnishing :</label>
+                    <select name="furnish" id="furnish">
                       <option value="none">Non-furnished</option>
                       <option value="none">Semi-furnished</option>
                       <option value="none">Fully-furnished</option>
@@ -332,8 +341,8 @@
                   </div>
 
                         <div class="dropdown-container6">
-                      <label>Property Age</label>
-                    <select style="border: solid #2ecab6;border-radius: 5px;margin: 10px;" name="age" id="age">
+                      <label>Property Age :</label>
+                    <select  name="age" id="age">
                       <option value="none">Option1 </option>
                       <option value="none">Option2</option>
                       <option value="none">Option3</option>
@@ -342,8 +351,8 @@
 <br>
 
                      <div class="dropdown-container7">
-                      <label>Preference</label>
-                    <select style="border: solid #2ecab6;border-radius: 5px;margin: 10px;" name="opt1" id="opt1">
+                      <label>Preference :</label>
+                    <select name="opt1" id="opt1">
                       <option value="none">Male only </option>
                       <option value="none">Female Only</option>
                       <option value="none">Couple Privacy</option>
@@ -353,8 +362,8 @@
                   </div>
 
                       <div class="dropdown-container8">
-                        <label>Deposit</label>
-                    <select  style="margin-top: 10px;border: solid #2ecab6;border-radius: 5px;margin: 10px;" name="opt2" id="opt2">
+                        <label>Deposit :</label>
+                    <select name="opt2" id="opt2">
                       <option value="none">1 Month Deposit</option>
                       <option value="none">2 Month Deposit</option>
                       <option value="none">3 Month Deposit</option>
@@ -373,12 +382,7 @@
                           </div>
                       </div>
                     </div>
-                      <div class="lower2">
-                          <button style=" border : none;background-color: #32a898; color: white; margin: 10px;" type="button" class="btn btn-primary">View more details</button>
-                          <button style=" border : none;background-color: #32a898; color: white;margin: 10px;" type="button" class="btn btn-primary">Get owner details</button>
-                          <button style=" border : none;background-color: #32a898; color: white;margin: 10px;" type="button" class="btn btn-primary">Book now </button>
-                          <i  class="fa fa-info-circle" style="margin-top: 12px;" data-toggle="modal" data-target="#myModal2"></i>
-                      </div>
+                      
 </div>
 </div>
 </div>
@@ -435,12 +439,8 @@
 
 <!--- Middle Card Section End -->
 <!-- Right Sidebar Start -->
- <!--Side-bar-Right start-->  
- <!--Side-bar-Right start-->
          <div class="col col-2 rside" style=" float: right;padding: 0;margin: 0; margin-top: 5px; border:solid  #2ecab6;border-radius: 5px;">
-             <h4  class="title" >
-                 Sheltie's Premium Properties
-             </h4>
+             <p class="title">Sheltie's Shelter</p>
              <ul class="features">
                  <li><i class="fas fa-check"> </i>Verified</li>
                  <li><i class="fas fa-check"> </i>Hygiene Maintained</li>
