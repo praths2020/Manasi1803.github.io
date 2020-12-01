@@ -389,7 +389,7 @@ font-size: 16px;
   margin: 0;
   text-align: center;
   list-style:  none;
-  font-size: 0.9em;
+  font-size: 1em;
 
 }
 .features li {
@@ -468,13 +468,15 @@ ul.breadcrumb li a:hover {
   text-decoration: none;
 
 }
+
 .neg a:hover{
   text-decoration: underline;
+ 
 
 
 }
-.fa-map-marker {
-  color: red;
+.fa-map-marker-alt {
+  color: #2ecab6;
   font-size: 20px;
   margin-right: 5px;
 }
@@ -507,7 +509,8 @@ ul.breadcrumb li a:hover {
 }
 
 .dropdown-container2,.dropdown-container4,.dropdown-container6,.dropdown-container8{
-  float:right;
+  float:left;
+  margin-left: 10px;
 }
 
 
