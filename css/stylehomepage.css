@@ -554,11 +554,17 @@ select {
       padding-top: 12px!important;
    padding-bottom: 13px!important;
   }
+  .choose{
+    float: right;
+  }
 }
 
 @media (max-width: 620px) and (min-width: 445px) {
   .a1{
     height: 270px;
+  }
+  .choose{
+    float: right;
   }
 }
 @media (max-width: 445px)  {
@@ -577,7 +583,10 @@ select {
       }
    .navbar-brand p{
   font-size: 12px;  
-} 
+}
+.choose{
+    float: right;
+  } 
   
 }
 @media (max-width: 386px)  {
@@ -591,5 +600,8 @@ select {
     }
    .dropdown{
     margin-left: -25px!important
+  }
+  .choose{
+    float: right;
   }
 }
