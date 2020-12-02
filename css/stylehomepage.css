@@ -223,8 +223,15 @@ footer a {
   border: none !important; 
   /*text-decoration: none !important;*/
   color: white !important;
-  margin: 12px;
+
+  margin: 15px;
 }
+
+/*.collapse,.checkboxc{
+color: black;
+  font-size:20px;
+
+}*/
 
 .sorting{
   background-color: #2ecab6 !important;
