@@ -10,11 +10,11 @@ body {
 .navbar-brand {
   font-size: 20px;
   margin-top: 5px!important;
-  margin-bottom: -10px!important
+  /*margin-bottom: -10px!important;*/
 }
 .navbar-brand p {
   font-size: 14px;
-  margin-top: -10px;
+  /*margin-top: -10px;*/
 }
 .navbar ul li a,
 .nav-item a ,
@@ -186,6 +186,18 @@ footer a {
     background-color: #3e8e41;
 }
 /*Left Sidebar Start*/
+.sortc{
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+.checkc{
+  float: right;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-left: 15px;
+
+}
 .check{
   margin-right: 15px; 
   margin-top: 14px; 
@@ -209,15 +221,18 @@ footer a {
 .sortby, 
 .filters{
   border: none !important; 
-  text-decoration: none !important;
+  /*text-decoration: none !important;*/
   color: white !important;
-  margin: 15px;
-
-
+  margin: 12px;
 }
+
 .sorting{
   background-color: #2ecab6 !important;
   height: 50px;
+
+}
+.sorting a:hover{
+  text-decoration: underline;
 
 }
 
@@ -319,7 +334,8 @@ nav ul li a:hover
 .pg-show li:hover,
 .bhk-show li:hover,
 .cat-show
- li:hover
+ li:hover,
+.checkboxc > label:hover
 {
   background: #d5f6f2!important;
   color: #17c3ad !important;

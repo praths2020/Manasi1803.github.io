@@ -125,16 +125,17 @@
 
 
       <!---Left Sidebar start ---------->
-      <div class="d-flex" style=" margin: 0 20px;  margin-top:6%;">
+      <div class="d-flex" style=" margin: 0 20px;  margin-top:8%;">
       <div style=" margin: 0;">
       <nav class="sidebar" style=" border: solid #2ecab6;border-radius: 5px; padding: 0; margin-top:10px!important; display: inline-block;" >
+        <div id="accordion">
         <div class="text sorting" style="margin-top:0;">
-<a  class="filters" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Filters&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          
-         <a href="#" class="sortby" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Sort By&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+          <a  class="filters" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Filters&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    
+          <a href="#" class="sortby" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Sort By&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
 
         <div style="margin:0; margin:15px 0; text-align: center; font-size: 20px;">Sheltie's Shelter<input type="checkbox" id="checkbox1" style="margin: 10px; margin-top: 4px;"><hr></div>
-<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" aria-expanded="true">
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" aria-expanded="true">
 
         <ul> 
 
@@ -207,23 +208,27 @@
             </ul>
           </li>
         </ul>
-                </div>
+      </div>
 <div id="collapseTwo" class="collapse"  data-parent="#accordion" aria-expanded="false">
+  <div class="checkboxc">
+  <label class="sortc">Popularity<input type="checkbox" class="checkc"></label>
+</div>
+<div class="checkboxc">
+  <label class="sortc">Customer Ratings<input type="checkbox" class="checkc"></label>
+</div>
       <div class="checkboxc">
-  <label>Price-Lowest to Highest<input type="checkbox" value=""></label>
+  <label class="sortc">Price-Lowest to Highest<input type="checkbox" value="" class="checkc"></label>
 </div>
 <div class="checkboxc">
-  <label>Price-Highest to Lowest<input type="checkbox" value=""></label>
+  <label class="sortc">Price-Highest to Lowest<input type="checkbox" value="" class="checkc"></label>
 </div>
-<div class="checkboxc">
-  <label>Customer Ratings<input type="checkbox"></label>
-</div>
-<div class="checkboxc">
-  <label>Option 4<input type="checkbox"></label>
+
 </div>
 </div>
       </nav>
-      </div>
+      
+    </div>
+    
 
 
 <!-------------Left Sidebar End ----------->
