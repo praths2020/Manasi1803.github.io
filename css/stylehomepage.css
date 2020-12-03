@@ -442,8 +442,9 @@ ul.breadcrumb li a:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 .fa-check{
-  color:#2ECAB6;
+  color:#093f3f;
   margin-right: 5px;
+  
 }
 @media only screen and (max-width: 767px) {
 .features {
