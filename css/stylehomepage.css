@@ -262,11 +262,17 @@ font-size: 16px;
   margin-bottom: 20px;
   margin-left: 15px;
 }
-.checkc{
-  float: right;
+/*.checkc{
+  float: right !important;
+  margin-left: 60px;
   margin-top: 8px;
   margin-right: 15px;
   margin-left: 15px;
+
+}*/
+.checkboxc li:hover{
+    background: #d5f6f2!important;
+  color: #17c3ad !important;
 
 }
 .check{
