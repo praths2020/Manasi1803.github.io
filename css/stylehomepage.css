@@ -310,6 +310,7 @@ color: black;
 }
 /*---------------------------left part end---------------------------------------------*/
 /*---------------------------middle part start---------------------------------------------*/
+/*---------------------------middle part start---------------------------------------------*/
 ul.breadcrumb {
   padding: 10px 10px;
   list-style: none;
@@ -358,10 +359,10 @@ ul.breadcrumb li a:hover {
 }
 
 .fa-info-circle{
+  float:right;
   color: #2ecab6 !important;
   margin: 5px;
   font-size: 20px;
-
 }
 
 .btn-info {
@@ -384,7 +385,7 @@ ul.breadcrumb li a:hover {
   margin-left: 10px;
 }
 
-.generalcard{
+.generalcard,{
   font-size: 15px;
 }
 
@@ -399,6 +400,8 @@ ul.breadcrumb li a:hover {
      margin: 10px;
      padding: 2px;
 }*/
+
+/*---------------------------middle part end---------------------------------------------*/
 
 /*---------------------------middle part end---------------------------------------------*/
 /*---------------------------right part start---------------------------------------------*/
