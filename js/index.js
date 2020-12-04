@@ -53,3 +53,9 @@ $('nav ul li').click(function(){
 //       document.getElementById("heart1").classList.remove("heartactive1");
 //     }
 //   }
+    // document.getElementById('category').onchange = function () {  
+    //     var obj = document.getElementById('sharing').setAttribute('disabled',this.value=='PG/Hostel');
+
+    //     obj.setAttribute('NA');
+        
+    // }    
