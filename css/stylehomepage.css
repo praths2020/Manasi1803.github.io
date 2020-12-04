@@ -55,6 +55,9 @@ body {
    .navbar-brand p{
   font-size: 12px;  
 }
+.lower{
+    margin-top: 0 !important;
+  }
   
 }
 @media (max-width: 386px)and (min-width: 381px)  {
@@ -64,6 +67,9 @@ body {
    .dropdown-menu{
     min-width: 25px !important;
   }
+  .lower{
+    margin-top: 0 !important;
+  }
 }
 @media (max-width: 381px){
   .dropdown{
@@ -71,6 +77,9 @@ body {
   }
    .dropdown-menu{
     min-width: 25px !important;
+  }
+  .lower{
+    margin-top: 0 !important;
   }
 }
 
