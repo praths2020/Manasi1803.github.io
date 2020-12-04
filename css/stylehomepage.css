@@ -310,6 +310,10 @@ color: white !important;
   line-height: 65px;
   letter-spacing: 1px;
 }
+.vl {
+  border-left: 6px solid white;
+  height: 50px;
+}
 /*---------------------------left part end---------------------------------------------*/
 /*---------------------------middle part start---------------------------------------------*/
 /*---------------------------middle part start---------------------------------------------*/
