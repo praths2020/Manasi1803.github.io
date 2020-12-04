@@ -283,7 +283,7 @@ ul.breadcrumb li a:hover {
 .fa-info-circle{
   float:right;
   color: #2ecab6 !important;
-  margin: 5px;
+  /*margin: 5px;*/
   font-size: 20px;
 }
 
