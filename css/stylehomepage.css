@@ -350,7 +350,24 @@ ul.breadcrumb li a:hover {
   text-decoration: none;
 
 }
-
+/*heart*/
+/*.heartactive{
+  color: red !important;
+  font-size:23px;
+}
+.heartinactive{
+  color:#9fa5a5 !important;
+  font-size:19px;
+}
+.heartactive1{
+  color: red !important;
+  font-size:23px;
+}
+.heartinactive1{
+  color:#9fa5a5 !important;
+  font-size:19px;
+}
+*/
 .neg a:hover{
   text-decoration: underline;
 }
