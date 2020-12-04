@@ -44,7 +44,10 @@ body {
     padding-left: 0!important;
   }
   .dropdown{
-    margin-left: -20px!important
+    margin-left: -20px!important;
+  }
+  .dropdown-menu{
+    min-width: 25px !important;
   }
   .navbar-brand{
   font-size: 18px;
@@ -56,12 +59,18 @@ body {
 }
 @media (max-width: 386px)and (min-width: 381px)  {
    .dropdown{
-    margin-left: -25px!important
+    margin-left: -25px!important;
+  }
+   .dropdown-menu{
+    min-width: 25px !important;
   }
 }
 @media (max-width: 381px){
   .dropdown{
-    margin-left: -35px!important
+    margin-left: -35px!important;
+  }
+   .dropdown-menu{
+    min-width: 25px !important;
   }
 }
 
@@ -154,6 +163,9 @@ body {
   transform: translateY(-50%) rotate(-180deg);
   
 }
+/*.sidebar a {
+  line-height: 20px !important;
+}*/
 .sortc{
   font-size: 16px;
   /*margin-bottom: 5px;*/
