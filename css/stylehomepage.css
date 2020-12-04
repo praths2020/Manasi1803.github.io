@@ -57,6 +57,7 @@ body {
 }
 .lower{
     margin-top: 0 !important;
+    margin-bottom: 10px !important;
   }
   
 }
@@ -69,6 +70,7 @@ body {
   }
   .lower{
     margin-top: 0 !important;
+    margin-bottom: 10px !important;
   }
 }
 @media (max-width: 381px){
@@ -80,6 +82,7 @@ body {
   }
   .lower{
     margin-top: 0 !important;
+    margin-bottom: 10px !important;
   }
 }
 
