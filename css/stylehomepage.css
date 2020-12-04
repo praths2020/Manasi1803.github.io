@@ -59,6 +59,9 @@ body {
     margin-top: 0 !important;
     margin-bottom: 10px !important;
   }
+  .card{
+    line-height: 30px !important;
+  }
   
 }
 @media (max-width: 386px)and (min-width: 381px)  {
@@ -72,6 +75,9 @@ body {
     margin-top: 0 !important;
     margin-bottom: 10px !important;
   }
+  .card{
+    line-height: 30px !important;
+  }
 }
 @media (max-width: 381px){
   .dropdown{
@@ -83,6 +89,9 @@ body {
   .lower{
     margin-top: 0 !important;
     margin-bottom: 10px !important;
+  }
+  .card{
+    line-height: 30px !important;
   }
 }
 
