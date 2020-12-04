@@ -245,6 +245,10 @@ color: white !important;
   border-left: 6px solid white;
   height: 50px;
 }
+/*.btn-info.focus, .btn-info:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}*/
 /*---------------------------left part end---------------------------------------------*/
 /*---------------------------middle part start---------------------------------------------*/
 /*---------------------------middle part start---------------------------------------------*/
