@@ -42,7 +42,7 @@
  <div  class="navbar-brand  py-0"style="font-size: 16px;">
   <div class="nav-item dropdown" >
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fas fa-map-marker-alt"></i>Choose City
+         <i class="fas fa-map-marker-alt" style="color: #2ecab6 !important"></i>Choose City
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Bangalore</a>
@@ -71,13 +71,16 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item mr-4">
         <div class=" dropdown"style="margin-left: 0px!important">
-                  <button type="button" class="btn btn-info dropdown-toggle"data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">Sheltie's Plan</button>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <button type="button" class="btn btn-info dropdown-toggle"data-toggle="dropdown"aria-haspopup="true" aria-expanded="false" class="plan">Sheltie's Plan</button>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
                       <a class="dropdown-item" href="#">Option A</a>
                       <a class="dropdown-item" href="#">Option B</a>
                       <a class="dropdown-item" href="#">Option C</a>
+                      
                   </div>
-              </div></li>
+                 
+              </li>
       <li class="nav-item mr-4 login">
         <a class="nav-link" href="#SignupModal" data-toggle="modal">Sign up </a>
       </li>
@@ -105,8 +108,69 @@
                     
                     <a href="#" class="sortby" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Sort By</a>
                   </div>
+                  <!-- shelties shelter for mobile view -->
+                  <div style="margin:0; margin:15px 0; text-align: center; font-size: 20px;">
+                      
+                      <button style="outline: none; border: none; background-color: #2ecab6; color: white;" type="button" class="btn dis " id="sheltiebtn" data-toggle="modal" data-target="#exampleModalLong">
+                        Sheltie's Shelter
+                      </button>
+                      
+                      <input type="checkbox" id="checkbox1" style="margin: 10px; margin-top: 4px;"><hr>
+                      <div class="modal fade mb-view" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
 
-                    <div style="margin:0; margin:15px 0; text-align: center; font-size: 20px;">Sheltie's Shelter<input type="checkbox" id="checkbox1" style="margin: 10px; margin-top: 4px;"><hr></div>
+                              <button  type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="col">
+                                <div class="right"style=" background: white; font-size: 12px;">
+                                  <div class="rside" style=" padding: 0;margin: 0; border-radius: 5px; height: 50%;" >
+                                     <p class="title text-center">Sheltie's Shelter</p>
+                                     <ul  class="features text-left">
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check" > </i>Verified</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;" ><i class="fas fa-check"> </i>Hygiene Maintained</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Sheltie's Plan Available</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Online Payment</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Great Deal</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Best Offers</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Monthly Discount</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Coupons for Monthly Rent Payment</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Sheltie's Plan Available</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Legal Properties</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Rent In EMIs</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Post-Paid Services Available</li>
+                                         <li style="margin: 0 !important; padding: 0 !important;"><i class="fas fa-check"> </i>Financial Assistance</li>
+                                     </ul>
+                                 </div>
+                              </div>
+                             </div>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button style="background-color: #2ECAB6; border: none; outline: none;" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <style>
+                        .dis{
+                          pointer-events: none;
+                          background-color: white !important;
+                          color: black !important;
+                          
+                        }
+                        .l{
+                         display: none;
+                        }
+                      </style>  
+                    </div>
+                  <!-- end -->
+
+                    <!-- <div style="margin:0; margin:15px 0; text-align: center; font-size: 20px;">Sheltie's Shelter<input type="checkbox" id="checkbox1" style="margin: 10px; margin-top: 4px;"><hr></div> -->
                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" aria-expanded="true">
                        <ul> 
                           <li>
@@ -181,11 +245,11 @@
                          </div>
 
                           <div id="collapseTwo" class="collapse"  data-parent="#accordion" aria-expanded="false">
-                            <ul class="checkboxc">
-                                  <li class="sortc" >Popularity<input type="checkbox" class="check" style="margin-top: 25px;"></li>
-                                  <li class="sortc" >Customer Ratings<input type="checkbox" class="check" style="margin-top: 25px;"></li>
-                                  <li class="sortc" >Price-Lowest to Highest<input type="checkbox" class="check" style="margin-top: 25px;"></li>
-                                  <li class="sortc" >Price-Highest to Lowest<input type="checkbox" class="check" style="margin-top: 25px;"></li>
+                            <ul class="checkboxc" >
+                                  <li class="sortc" >Popularity<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
+                                  <li class="sortc" >Customer Ratings<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
+                                  <li class="sortc" >Price-Lowest to Highest<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
+                                  <li class="sortc" >Price-Highest to Lowest<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
                                 </ul>
                             
 
@@ -267,10 +331,36 @@
                         </div>
                  </div><!-----col-4(image) end----------->
                  <div class="col-lg-8 col-md-8 col-sm-8">
-                       <div  style="margin:0; margin-top: 10px;margin-right: 10px;" class="pp2 " >
+                       <div  style="margin:0; margin-top: 15px;margin-right: 15px;" class="pp2 " >
 
                                   Property Name
-                                   <i class="fa fa-heart"></i>
+                                  <button style="float: right; border: none;outline: none;background-color: white;" id="btn-heart"><i class="fa fa-heart  heartinactive" id="heart" ></i></button>
+                                  <style>
+                                    .heartactive{
+                                      color: red !important;
+                                      font-size:23px;
+                                    }
+                                    .heartinactive{
+                                      color:#9fa5a5 !important;
+                                      font-size:19px;
+                                    }
+                                  </style>
+                                  <script>
+                                  var t = document.getElementById("heart");
+                                  document.getElementById("btn-heart").addEventListener("click",changecolor);
+                                  function changecolor(){
+                                    if(t.classList.contains("heartinactive")){
+                                      document.getElementById("heart").classList.add("heartactive");
+                                      document.getElementById("heart").classList.remove("heartinactive");
+                                    }
+                                    else{
+                                      document.getElementById("heart").classList.add("heartinactive");
+                                      document.getElementById("heart").classList.remove("heartactive");
+                                    }
+                                  }
+                                  
+
+                                  </script>
                                   <hr/>
                                   <i class="fa fa-map-marker-alt" aria-hidden="true"></i>     Nearby<br>
                           <div>
@@ -429,12 +519,12 @@
     </div><!--------middle end--->
 </div><!--------col-7 end--->
 <!-----------------------right part start-------------------------------->
-<div class="col-lg-2 col-md-2 col-sm-2  pl-sm-0  pl-md-0 pl-lg-0">
+<div class="col-lg-2 col-md-2 col-sm-2  pl-sm-0  pl-md-0 pl-lg-0 " id="ll">
         <div class="right"style="background: white; font-size: 15px;">
           <div class="rside" style=" padding: 0;margin: 0; border-radius: 5px; height: 50%;" >
              <p class="title text-center">Sheltie's Shelter</p>
              <ul class="features text-left">
-                 <li><i class="fas fa-check" > </i>Verified</li>
+                 <li><i class="fas fa-check" ></i>Verified</li>
                  <li><i class="fas fa-check"> </i>Hygiene Maintained</li>
                  <li><i class="fas fa-check"> </i>Sheltie's Plan Available</li>
                  <li><i class="fas fa-check"> </i>Online Payment</li>

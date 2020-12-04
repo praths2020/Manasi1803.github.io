@@ -175,7 +175,7 @@ font-size: 16px;
 
 }
 .sidebar ul li{
-  line-height: 60px;
+  line-height: 43px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
   padding-left: 10px;
 }
@@ -207,7 +207,7 @@ font-size: 16px;
 }
 .sidebar ul ul li
 {
-  line-height: 42px;
+  line-height: 32px;
   border-bottom: none;
 
 }
@@ -259,17 +259,11 @@ font-size: 16px;
 }
 .sortc{
   font-size: 16px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-}
-/*.checkc{
-  float: right !important;
-  margin-left: 60px;
-  margin-top: 8px;
-  margin-right: 15px;
+  /*margin-bottom: 5px;*/
   margin-left: 15px;
 
-}*/
+}
+
 .checkboxc li:hover{
     background: #d5f6f2!important;
   color: #17c3ad !important;
@@ -279,6 +273,13 @@ font-size: 16px;
   margin-right: 15px; 
   margin-top: 14px; 
   float: right;
+}
+.checkc{
+ margin-right: 15px; 
+  margin-top: 10px; 
+  float: right;
+}
+
 }
 .sidebar .text{
   color: black;
@@ -293,11 +294,6 @@ color: white !important;
   
 }
 
-/*.collapse,.checkboxc{
-color: black;
-  font-size:20px;
-
-}*/
 
 .sorting{
   background-color: #2ecab6 !important;
@@ -395,6 +391,7 @@ ul.breadcrumb li a:hover {
   font-size: 15px;
 }
 
+
 /*select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -406,13 +403,49 @@ ul.breadcrumb li a:hover {
      margin: 10px;
      padding: 2px;
 }*/
+/* apply CSS to the select tag of  
+         .dropdown-container div*/
+
+.dropdown-container1 select,
+.dropdown-container2 select,
+.dropdown-container3 select,
+.dropdown-container4 select,
+.dropdown-container5 select,
+.dropdown-container6 select,
+.dropdown-container7 select,
+.dropdown-container8 select
+{
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+}
+
+/* for IE10 */
+.dropdown-container1 select::-ms-expand,
+.dropdown-container2 select::-ms-expand,
+.dropdown-container3 select::-ms-expand,
+.dropdown-container4 select::-ms-expand,
+.dropdown-container5 select::-ms-expand,
+.dropdown-container6 select::-ms-expand,
+.dropdown-container7 select::-ms-expand,
+.dropdown-container8 select::-ms-expand
+ {
+  display: none;
+}
+.dropdown-toggle::after {
+    content: none;
+}
 
 /*---------------------------middle part end---------------------------------------------*/
 
 /*---------------------------middle part end---------------------------------------------*/
 /*---------------------------right part start---------------------------------------------*/
-.col .features li .ion-checkmark{
-    color: black;
+.features li .ion-checkmark{
+    color: black !important;
+}
+.fas , .fa-check{
+  color: black !important;
 }
 .title {
 /*  position: relative;*/
@@ -428,29 +461,29 @@ ul.breadcrumb li a:hover {
 }
 .features li {
   border-top: 1px solid #d2d7e2;
-  padding: 10px 5%;
+  padding: 0.7em 5%;
   font-weight: bold;
+  font-size: 12px;
 }
- .features li:nth-child(even) {
-  /*background: rgba(0, 0, 0, 0.08);*/
-}
+ /*.features li:nth-child(even) {
+  /*background: rgba(0, 0, 0, 0.08);}*/
 .features i {
   margin-right: 8px;
-  opacity: 0.4;
+  opacity: 0.6;
 }
- .row .col .features li {
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-}
+
 .fa-check{
-  color:#093f3f;
   margin-right: 5px;
   
 }
-@media only screen and (max-width: 767px) {
-.features {
-    margin-top: 0;
+
+@media only screen and (max-width: 575px) {
+.diss {
+   visibility: hidden;
+      
   }
 }
+/*---------------------------right part end---------------------------------------------*/
 /*---------------------------right part end---------------------------------------------*/
 /*---------------------------footer start---------------------------------------------*/
 
