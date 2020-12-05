@@ -312,6 +312,36 @@ color: white !important;
 .dropdown-toggle::after {
     content: none;
 }
+/* apply CSS to the select tag of  
+         .dropdown-container div*/
+
+.dropdown-container1 select,
+.dropdown-container2 select,
+.dropdown-container3 select,
+.dropdown-container4 select,
+.dropdown-container5 select,
+.dropdown-container6 select,
+.dropdown-container7 select,
+.dropdown-container8 select
+{
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+}
+
+/* for IE10 */
+.dropdown-container1 select::-ms-expand,
+.dropdown-container2 select::-ms-expand,
+.dropdown-container3 select::-ms-expand,
+.dropdown-container4 select::-ms-expand,
+.dropdown-container5 select::-ms-expand,
+.dropdown-container6 select::-ms-expand,
+.dropdown-container7 select::-ms-expand,
+.dropdown-container8 select::-ms-expand
+ {
+  display: none;
+}
 /*---------------------------left part end---------------------------------------------*/
 
 /*---------------------------left part end---------------------------------------------*/
