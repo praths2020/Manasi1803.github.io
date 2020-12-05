@@ -357,18 +357,21 @@ color: white !important;
 /*---------------------------middle part start---------------------------------------------*/
 /*---------------------------middle part start---------------------------------------------*/
 ul.breadcrumb {
-  padding: 10px 10px;
+  /*padding: 10px 10px;*/
   list-style: none;
   background-color: #eee;
+  height: 20px !important;
   /*float:left;*/
   /*margin: 5px;*/
 }
 ul.breadcrumb li {
   display: inline;
   font-size: 15px;
+  margin-top: 0 !important;
+
 }
 ul.breadcrumb li + li:before {
-  padding: 5px;
+  /*padding: 5px;*/
   color: black;
   content: " > ";
 }
@@ -383,7 +386,7 @@ ul.breadcrumb li a:hover {
 .generalcard p {
   margin-bottom: 0;
   text-align: right;
-  margin-top: -25px;
+ /* margin-top: -25px;*/
 }
 .generalcard p a {
   text-decoration: none;
