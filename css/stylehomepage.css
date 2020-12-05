@@ -121,6 +121,14 @@ font-size: 16px;
 
 /*-----------------------navbar end------------------------------------------->*/
 /*------------------------all media queries-----------------------------*/
+/* check box mv */
+@media screen and (max-width: 465px) {
+  .checkbox{
+    font-size: 11px;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 @media (max-width: 576px){
   .navbar-brand{
@@ -279,7 +287,6 @@ font-size: 16px;
   float: right;
 }
 
-}
 .sidebar .text{
   color: black;
   font-size: 20px;
@@ -357,24 +364,20 @@ color: white !important;
 /*---------------------------middle part start---------------------------------------------*/
 /*---------------------------middle part start---------------------------------------------*/
 ul.breadcrumb {
-  /*padding: 10px 10px;*/
+  padding: 10px 10px;
   list-style: none;
   background-color: #eee;
-  height: 20px !important;
   /*float:left;*/
   /*margin: 5px;*/
 }
 ul.breadcrumb li {
   display: inline;
   font-size: 15px;
-  margin-top: 0 !important;
-
 }
 ul.breadcrumb li + li:before {
-  /*padding: 5px;*/
+  padding: 5px;
   color: black;
-  content: ">";
-  
+  content: " > ";
 }
 ul.breadcrumb li a {
   color: #23b6ae;
@@ -387,7 +390,7 @@ ul.breadcrumb li a:hover {
 .generalcard p {
   margin-bottom: 0;
   text-align: right;
- /* margin-top: -25px;*/
+  margin-top: -25px;
 }
 .generalcard p a {
   text-decoration: none;
