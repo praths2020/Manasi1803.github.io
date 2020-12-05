@@ -179,7 +179,7 @@
                           document.getElementById("collapseOne").classList.remove("show")
                         }
                       </script>
-                      <!--  <button style="outline: none; border: none; background-color: #2ecab6; color: white; margin-bottom: 6px; margin: 5px;" type="button" class="btn dis btn-info btn-sm " id="sheltiebtn" data-toggle="modal" data-target="#exampleModalLong">
+                       <!-- <button style="outline: none; border: none; background-color: #2ecab6; color: white; margin-bottom: 6px; margin: 5px;" type="button" class="btn dis btn-info btn-sm" id="sheltiebtn" data-toggle="modal" data-target="#exampleModalLong">
                         Sheltie's Shelter <br>Premium Properties</button> <input type="checkbox" id="checkbox1" class="diss" style=" margin-left: 10px; margin-top: 2px;"> -->
                         <font color="#2ECAB6" size="4" style="margin-left: 10px;"><strong >Sheltie's Shelter</font></strong> <br><p style="margin-left: 10px;">Premium Properties<input type="checkbox" id="checkbox1" class="diss" data-toggle="modal" data-target="#exampleModalLong" style=" margin-left: 10px; margin-top: 2px;"></p>
                       
@@ -254,7 +254,7 @@
                                   <li>Above 15<input type="checkbox" class="check"></li>
                                 </ul>
                               </li>
-                              <li><button id="apply" class="btn btn-sm  " style="float: left; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em;">Apply</button></li>
+                              <li><button id="clearall" class="btn btn-sm  " style="float: left; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em;">Apply</button></li>
                               <li><button id="clearall" class="btn btn-sm  " style="float: right; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em" onclick="uncheckAll()" >Clear all</button></li>
                               <!-- <button type="button" class="btn btn-info" style="float: right;margin-bottom: 10px !important; margin-right: 5px !important; background-color: #32a898 !important;">Clear All</button> -->
                             </ul>
@@ -266,8 +266,8 @@
                                   <li class="sortc" >Customer Ratings<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
                                   <li class="sortc" >Price-Lowest to Highest<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
                                   <li class="sortc" >Price-Highest to Lowest<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
-                                  <li><button id="apply" class="btn btn-sm  " style="float: left; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em">Apply</button></li>
-                                  <li><button id="clearall" class="btn btn-sm  " style="float: right; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em" onclick="uncheckAll()" >Clear all</button></li>
+                                  <li><button  type="submit" class="btn btn-sm " style="float: left; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em">  Apply </button></li>
+                                  <li><button type="button" id="clearall" class="btn btn-sm  " style="float: right; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em" onclick="uncheckAll()" >Clear all</button></li>
                                   <!-- <button type="button" class="btn btn-info" style="float: right; margin-bottom: 10px !important;  margin-right: 5px !important; background-color: #32a898 !important;">Clear All</button> -->
                                 </ul>
 
@@ -291,17 +291,16 @@
 <div class="col-lg-8 col-md-7 col-sm-7">
     <div class="middle " style="background: white;">
           <div style="margin-top: 0;  border:none!important;" class="generalcard">
-              <div class="checkbox" style=" margin-top: 0; border: solid 1px #2ecab6;border-radius: 2px; background-color: white ">
-                  <div class=" d-flex justify-content-between" style=" border:none !important;">
-                  <div  style=" text-align: center; margin-left: 5px;">Couples Privacy<input type="checkbox" id="checkbox1" style="margin: 5px; margin-top: 2px;"></div>
-                  <div style="text-align: center;">Family Zoned<input type="checkbox" id="checkbox1" style="margin:5px;"></div>
+              <div class="checkbox" style=" margin-top: 0; border: solid #2ecab6;border-radius: 2px; background-color: white ">
+                  <div class=" d-flex justify-content-around">
+                  <div style="text-align: center;">Couples Privacy<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
+                  <div style="text-align: center;">Family Zoned<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
 
                   <div style="text-align: center;">Male Only<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
 
-                  <div style="text-align: center; margin-right: 5px;">Female Only<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
+                  <div style="text-align: center;">Female Only<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
                 </div>
               </div>
-              
               <div  style="margin-top: 0 !important; " >
                 <ul class="breadcrumb" style="margin: 0;padding: 0; border-radius: 0 !important;">
                   <li><a href="#" >India</a></li>
@@ -414,6 +413,7 @@
                                        color: black;
                                       
                                      }
+                                  
 
                                      @media only screen and (max-width: 1200px) {
                                        /**{
@@ -472,7 +472,6 @@
 
                                       
                                      </div></li>
-
                                    </ul>
                                           <!--  <br> -->
                                     <ul >
@@ -655,8 +654,8 @@
                                          <li style="list-style-type: none;"><div class="dropdown-container4">
                                            <select class="  mt-1"width name="opt2" id="opt2">
                                              <option value="none" selected disabled>Deposit</option>
-                                             <option value="none">1 Month Deposit</option>
-                                             <option value="none">2 Month Deposit</option>
+                                             <option value="none">1 Month</option>
+                                             <option value="none">2 Month</option>
                                              <option value="none">No Security</option>
                                            </select>
                                        
@@ -695,10 +694,10 @@
                                     <li style="list-style-type: none;"> <div class="dropdown-container6">
                                      <select class="  mt-1" name="category"  id="category">
                                        <option value="none" selected disabled>Property Age</option>
-                                       <option value="none"> 5</option>
+                                       <option value="none">  < 5</option>
                                        <option value="none">5-10</option>
                                        <option value="none">10-15</option>
-                                       <option value="none"> 15</option>
+                                       <option value="none">> 15</option>
                                    </select>
                                      </div><div class="lower mt-0" >
                                       <a href="" class="mt-5" style=" float: right; color: red; " data-toggle="modal" data-target="#myModal"> ₹4500 Negotiable</a>           
@@ -789,11 +788,11 @@
 <!-- card 2 end -->
 <!-----------------------right part start-------------------------------->
 <div class="col-lg-2 col-md-2 col-sm-2  pl-sm-0  pl-md-0 pl-lg-0 " id="ll">
-        <div class="right"style="background: white; ">
+        <div class="right"style="background: white; font-size: 15px;">
           <div class="rside" style=" padding: 0;margin: 0; border-radius: 5px; height: 50%;" >
              <p class="title text-center">Sheltie's Shelter</p>
              <ul class="features text-left">
-                 <li ><i class="fas fa-check"></i>Verified</li>
+                 <li><i class="fas fa-check" ></i>Verified</li>
                  <li><i class="fas fa-check"> </i>Hygiene Maintained</li>
                  <li><i class="fas fa-check"> </i>Sheltie's Plan Available</li>
                  <li><i class="fas fa-check"> </i>Online Payment</li>
@@ -975,7 +974,6 @@
             des.classList.add("dis");
             document.getElementById("ll").classList.remove("l");
             // document.getElementById("checkbox1").classList.remove("diss");
-
           //   document.getElementById("collapseOne").classList.remove("collapse-show");
           }
          

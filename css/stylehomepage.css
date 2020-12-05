@@ -130,6 +130,15 @@ font-size: 16px;
   }
 }
 
+/* Category option mv */
+@media only screen and (min-width: 360px) and (max-width: 767px){
+  select{
+    font-size: 0.7em;
+  }
+}
+
+
+
 @media (max-width: 576px){
   .navbar-brand{
     padding-left: 0!important;
@@ -144,8 +153,8 @@ font-size: 16px;
   font-size: 12px;  
 }
 .filters, .sortby{
-                                        height: 25px !important;
-                                       }
+height: 25px !important;
+ }
   /*input[type="search"]{
     font-size: 10px;
   }
@@ -318,7 +327,7 @@ color: white !important;
   letter-spacing: 1px;
 }
 .vl {
-  border-left: 3px solid white;
+  border-left: 6px solid white;
   height: 50px;
 }
 /*.btn-info.focus, .btn-info:focus {
