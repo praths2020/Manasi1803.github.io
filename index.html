@@ -253,7 +253,7 @@
                                   <li>Above 15<input type="checkbox" class="check"></li>
                                 </ul>
                               </li>
-                              <li><button id="clearall" class="btn btn-sm  " style="float: left; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em;">Apply</button></li>
+                              <li><button id="apply" class="btn btn-sm  " style="float: left; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em;">Apply</button></li>
                               <li><button id="clearall" class="btn btn-sm  " style="float: right; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em" onclick="uncheckAll()" >Clear all</button></li>
                               <!-- <button type="button" class="btn btn-info" style="float: right;margin-bottom: 10px !important; margin-right: 5px !important; background-color: #32a898 !important;">Clear All</button> -->
                             </ul>
@@ -265,7 +265,7 @@
                                   <li class="sortc" >Customer Ratings<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
                                   <li class="sortc" >Price-Lowest to Highest<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
                                   <li class="sortc" >Price-Highest to Lowest<input type="checkbox" class="checkc" style="margin-top: 15px;"></li>
-                                  <li><button id="clearall" class="btn btn-sm  " style="float: left; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em">Apply</button></li>
+                                  <li><button id="apply" class="btn btn-sm  " style="float: left; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em">Apply</button></li>
                                   <li><button id="clearall" class="btn btn-sm  " style="float: right; color: white; background-color: #2ecab6;border-radius: 5px; margin: 0.5em" onclick="uncheckAll()" >Clear all</button></li>
                                   <!-- <button type="button" class="btn btn-info" style="float: right; margin-bottom: 10px !important;  margin-right: 5px !important; background-color: #32a898 !important;">Clear All</button> -->
                                 </ul>
@@ -277,7 +277,7 @@
                             function uncheckAll() {
                               $("input[type='checkbox']:checked").prop("checked", false)
                             }
-                            $(':button').on('click', uncheckAll)
+                            $(':clearall').on('click', uncheckAll)
                           </script>
 
                  </nav>  
@@ -290,16 +290,17 @@
 <div class="col-lg-8 col-md-7 col-sm-7">
     <div class="middle " style="background: white;">
           <div style="margin-top: 0;  border:none!important;" class="generalcard">
-              <div class="checkbox" style=" margin-top: 0; border: solid #2ecab6;border-radius: 2px; background-color: white ">
-                  <div class=" d-flex justify-content-around">
-                  <div style="text-align: center;">Couples Privacy<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
-                  <div style="text-align: center;">Family Zoned<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
+              <div class="checkbox" style=" margin-top: 0; border: solid 1px #2ecab6;border-radius: 2px; background-color: white ">
+                  <div class=" d-flex justify-content-between" style=" border:none !important;">
+                  <div  style=" text-align: center; margin-left: 5px;">Couples Privacy<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
+                  <div style="text-align: center;">Family Zoned<input type="checkbox" id="checkbox1" style="margin:5px;"></div>
 
                   <div style="text-align: center;">Male Only<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
 
-                  <div style="text-align: center;">Female Only<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
+                  <div style="text-align: center; margin-right: 5px;">Female Only<input type="checkbox" id="checkbox1" style="margin: 5px;"></div>
                 </div>
               </div>
+              
               <div  style="margin-top: 0 !important; " >
                 <ul class="breadcrumb" style="margin: 0;padding: 0; border-radius: 0 !important;">
                   <li><a href="#" >India</a></li>

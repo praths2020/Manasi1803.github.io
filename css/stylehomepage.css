@@ -373,7 +373,8 @@ ul.breadcrumb li {
 ul.breadcrumb li + li:before {
   /*padding: 5px;*/
   color: black;
-  content: " > ";
+  content: ">";
+  
 }
 ul.breadcrumb li a {
   color: #23b6ae;
