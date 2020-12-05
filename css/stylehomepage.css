@@ -135,6 +135,9 @@ font-size: 16px;
    .navbar-brand p{
   font-size: 12px;  
 }
+.filters, .sortby{
+                                        height: 25px !important;
+                                       }
   /*input[type="search"]{
     font-size: 10px;
   }
@@ -148,11 +151,17 @@ font-size: 16px;
    .dropdown{
     margin-left: -25px!important
   }
+  .filters, .sortby{
+                                        height: 25px !important;
+                                       }
 }
 @media (max-width: 381px){
   .dropdown{
     margin-left: -35px!important
   }
+  .filters, .sortby{
+                                        height: 25px !important;
+                                       }
 }
 
 /*---------------------------left part start---------------------------------------------*/
