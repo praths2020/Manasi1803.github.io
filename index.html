@@ -384,118 +384,131 @@
                                   </script>
                                   <hr/>
                                   <i class="fa fa-map-marker-alt" aria-hidden="true"></i>     Nearby<br><hr>
-                          <div>
-                            <ul class="floatleft" style="float: left!important; ">
-                         <li style="list-style-type: none;"><div class="dropdown-container1">
-                              <label >Category :</label>
-                          <select name="category" id="category">
-                          <option value="none">PG/Hostel</option>
-                          <option value="none">Apartment</option>
-                          <option value="none">Independent House</option>
-                          <option value="none">Gated Community</option>
+                           <!--categoryy alined start-->                     
+                                 <div class="container-fluid " >
+                                   <style>
+                                     select{
+                                       background-color: #dadce4;
+                                       color: black;
+                                       border: none;
+                                       outline: none;
+                                       appearance: none;
+                                       border: solid  2px #dadce4;
+                                       border-radius: 5px;
+                                       width: 10em;
+                                       text-indent: 2px;
+                                     
+                                      
+                                     }
+                                     option{
+                                       background-color: #dadce4;
+                                       color: black;
+                                      
+                                     }
 
-                        </select>
-                        </div></li>
-                            <li style="list-style-type: none;"><div class="dropdown-container2">
-                              <label>PG Sharing Type :</label>
-                        <select name="sharing" id="sharing">
-                          <option value="none">Single</option>
-                          <option value="none">Twin</option>
-                          <option value="none">Tripple</option>
-                          <option value="none">Quadraple</option>
-                        </select>
-                              
-                        </div></li>
-                       <!-- <br> -->
-                        <li style="list-style-type: none;"><div class="dropdown-container3">
-                          <label>Preference :</label>
-                        <select name="opt1" id="opt1">
-                          <option value="none">Male only </option>
-                          <option value="none">Female Only</option>
-                          <option value="none">Couple Privacy</option>
-                          <option value="none">Family zoned</option>
-                        </select>
-                            
-                          </div></li>
+                                     @media only screen and (max-width: 1200px) {
+                                       *{
+                                         font-size: small !important;
+                                       }
+                                       div  .lower a{
+                                        float: left !important;
+                                        padding-top: -100px !important;
+                                       }
+                                       
+                                     }
+                                   </style>
+                                   <ul class=" floatleft" style="display: inline-block;">
+                                     <li style="list-style-type: none;"><div class="dropdown-container1">
+                                      <select  class="mt-1" name="category" id="category" >
+                                        <option value="none" selected disabled>Category</option>
+                                        <option value="none">PG/Hostel</option>
+                                        <option value="none">Apartment</option>
+                                        <option value="none">Independent House</option>
+                                        <option value="none">Gated Community</option>
+                                      </select>
+                                    </div></li>
+                                   <!-- <br> -->
+                                    <li style="list-style-type: none;"><div class="dropdown-container2">
+                                      <select class="  mt-1"  name="opt1" id="opt1" >
+                                        <option value="none" selected disabled>Preference</option>
+                                        <option value="none">Male only </option>
+                                        <option value="none">Female Only</option>
+                                        <option value="none">Couple Privacy</option>
+                                        <option value="none">Family zoned</option>
+                                      </select>
+                                        
+                                      </div></li>
+            
+                                        <li style="list-style-type: none;"><div class="dropdown-container3">
+                                          <select class="  mt-1"width name="opt2" id="opt2">
+                                            <option value="none" selected disabled>Deposit</option>
+                                            <option value="none">1 Month Deposit</option>
+                                            <option value="none">2 Month Deposit</option>
+                                            <option value="none">No Security</option>
+                                          </select>
 
-                            <li style="list-style-type: none;"><div class="dropdown-container4">
-                              <label>Deposit :</label>
-                        <select name="opt2" id="opt2">
-                          <option value="none">1 Month</option>
-                          <option value="none">2 Month</option>
-                          <option value="none">No Security</option>
-                          
+                                      
+                                     </div></li>
+                                   </ul>
+                                          <!--  <br> -->
+                                    <ul style="float: right; display: inline-block;">
+                                     <li style="list-style-type: none; "><div class="dropdown-container5">
+                                      <select class=" mt-1" name="category" id="category" >
+                                        <option value="none" selected disabled>Furnish</option>
+                                        <option value="none">Non Furnished</option>
+                                        <option value="none">Semi Furnished</option>
+                                        <option value="none">Fully Furnished</option>
+                                      </select>
+                                    </div></li>
+            
+                                   
+                                 <!--  <br> -->
+                                 <li style="list-style-type: none; ">
+                                  <div class="dropdown-container7">
+                                    <select class=" mt-1" name="category"  id="category">
+                                      <option value="none" selected disabled>BHK Type</option>
+                                      <option value="none">1 RK</option>
+                                      <option value="none">1 BHK</option>
+                                      <option value="none">2 BHK</option>
+                                      <option value="none">3 BHK</option>
+                                      <option value="none">4 BHK</option>
+                                      <option value="none">5 BHK</option>
+                                  </select>
+                                  
+                                   </div></li>
 
-                        </select>
-                          
-                         </div></li>
-                       </ul>
-                              <!--  <br> -->
-                        <ul class="floatright" style="float: left !important;">
-                         <li style="list-style-type: none;"><div class="dropdown-container5">
-                            <label>Furnishing :</label>
-                          <select name="furnish" id="furnish">
-                            <option value="none">Non</option>
-                            <option value="none">Semi</option>
-                            <option value="none">Fully</option>
+                                   <li style="list-style-type: none; "> <div class="dropdown-container6">
+                                    <select class="  mt-1" name="category"  id="category">
+                                      <option value="none" selected disabled>Property Age</option>
+                                      <option value="none">Below 5</option>
+                                      <option value="none">Below 5</option>
+                                      <option value="none">5-10</option>
+                                      <option value="none">10-15</option>
+                                      <option value="none">Above 15</option>
+                                  </select>
+                                  
+                                    </div>
+                                    <div class="lower mt-0" >
+                                    <a href="" class="mt-5" style=" float: right; color: red; " data-toggle="modal" data-target="#myModal"> ₹4500 Per Month Negotiable</a>           
+                                       </div>
+                                  </li></ul>
+                                        <br>
+                                </div>
+                               
+                                <!--category alined end here-->
 
 
-                          </select>
-                        </div></li>
 
-                       
-                     <!--  <br> -->
-                     <li style="list-style-type: none;">
-                      <div class="dropdown-container7">
-                        <label >BHK Type :</label>
-                            <select name="type" id="type">
-                            <option value="none">1 RK</option>
-                            <option value="none">1 BHK</option>
-                            <option value="none">2 BHK</option>
-                            <option value="none">3 BHK</option>
-                            <option value="none">4 BHK</option>
-                            <option value="none">5 BHK</option>
-                          </select>
-                      
-                       </div></li>
-                       <li style="list-style-type: none;"><div class="dropdown-container8">
-                        <label >Floor Preference :</label>
-                        <select name="preference" id="preference">
-                          <option value="none">1st</option>
-                          <option value="none">2nd</option>
-                          <option value="none">3rd</option>
-                          <option value="none">4th</option>
-                          <option value="none">5th</option>
-                          <option value="none">6th</option>
-
-                           </select>
-                        
-                         </div></li>
-                       <li style="list-style-type: none;"> <div class="dropdown-container6">
-                      <label >Property Age :</label>
-                        <select  name="age" id="age">
-                          <option value="none">Below 5</option>
-                          <option value="none">5-10</option>
-                          <option value="none">10-15</option>
-                          <option value="none">Above 15</option>
-                        </select>
-                        </div></li></ul>
-                            <br>
-                
-                        
-                      
-                     </div>
-
-                    </div><!-----pp2 end------->
-                    <div>
+                    </div><!----pp2 end------->
+                   <!--  <div>
                         <div class="lowers">
                           <div class="lower" style="float: right !important; margin-top: 50px;">
                             <br><br>
                            <a href="" class="neg" style="color: red; " data-toggle="modal" data-target="#myModal"> ₹4500 Per Month Negotiable</a>
-                           <!-- <a href="#"> <i class="fa fa-info-circle" data-toggle="modal" data-target="#myModal"></i></a> -->
+                           <a href="#"> <i class="fa fa-info-circle" data-toggle="modal" data-target="#myModal"></i></a>
                             </div>
                         </div>
-                      </div>
+                      </div> -->
 
             </div><!---col-8 end------->
 </div>
@@ -593,127 +606,131 @@
                                   </script>
                                   <hr/>
                                   <i class="fa fa-map-marker-alt" aria-hidden="true"></i>     Nearby<br><hr>
-                          <div>
-                            <ul class="floatleft" style="float: left!important; ">
-                         <li style="list-style-type: none;"><div class="dropdown-container1">
-                              <label >Category :</label>
-                          <select name="category" id="category">
-                            <option value="none">Apartment</option>
-                          <option value="none">PG/Hostel</option>
-                          
-                          <option value="none">Independent House</option>
-                          <option value="none">Gated Community</option>
+                           <!--categoryy alined start-->                     
+                                 <div class="container-fluid " >
+                                   <style>
+                                     select{
+                                       background-color: #dadce4;
+                                       color: black;
+                                       border: none;
+                                       outline: none;
+                                       appearance: none;
+                                       border: solid  2px #dadce4;
+                                       border-radius: 5px;
+                                       width: 10em;
+                                       text-indent: 2px;
+                                     
+                                      
+                                     }
+                                     option{
+                                       background-color: #dadce4;
+                                       color: black;
+                                      
+                                     }
 
-                        </select>
-                        </div></li>
-                            <li style="list-style-type: none;"><div class="dropdown-container2">
-                              <label>PG Sharing Type :</label>
-                        <select name="sharing" id="sharing">
-                          <option value="none">  N/A</option>
-                          <option value="none">Single</option>
-                          <option value="none">Twin</option>
-                          <option value="none">Tripple</option>
-                          <option value="none">Quadraple</option>
-                        </select>
-                              
-                        </div></li>
-                       <!-- <br> -->
-                        <li style="list-style-type: none;"><div class="dropdown-container3">
-                          <label>Preference :</label>
-                        <select name="opt1" id="opt1">
-                          <option value="none">Female Only</option>
-                          <option value="none">Male only </option>
-                          <option value="none">Female Only</option>
-                          <option value="none">Couple Privacy</option>
-                          <option value="none">Family zoned</option>
-                        </select>
-                            
-                          </div></li>
+                                     @media only screen and (max-width: 1200px) {
+                                       *{
+                                         font-size: small !important;
+                                       }
+                                       div  .lower a{
+                                        float: left !important;
+                                        padding-top: -100px !important;
+                                       }
+                                       
+                                     }
+                                   </style>
+                                   <ul class=" floatleft" style="display: inline-block;">
+                                     <li style="list-style-type: none;"><div class="dropdown-container1">
+                                      <select  class="mt-1" name="category" id="category" >
+                                        <option value="none" selected disabled>Category</option>
+                                        <option value="none">PG/Hostel</option>
+                                        <option value="none">Apartment</option>
+                                        <option value="none">Independent House</option>
+                                        <option value="none">Gated Community</option>
+                                      </select>
+                                    </div></li>
+                                   <!-- <br> -->
+                                    <li style="list-style-type: none;"><div class="dropdown-container2">
+                                      <select class="  mt-1"  name="opt1" id="opt1" >
+                                        <option value="none" selected disabled>Preference</option>
+                                        <option value="none">Male only </option>
+                                        <option value="none">Female Only</option>
+                                        <option value="none">Couple Privacy</option>
+                                        <option value="none">Family zoned</option>
+                                      </select>
+                                        
+                                      </div></li>
+            
+                                        <li style="list-style-type: none;"><div class="dropdown-container3">
+                                          <select class="  mt-1"width name="opt2" id="opt2">
+                                            <option value="none" selected disabled>Deposit</option>
+                                            <option value="none">1 Month Deposit</option>
+                                            <option value="none">2 Month Deposit</option>
+                                            <option value="none">No Security</option>
+                                          </select>
 
-                            <li style="list-style-type: none;"><div class="dropdown-container4">
-                              <label>Deposit :</label>
-                        <select name="opt2" id="opt2">
-                          <option value="none">No Security</option>
-                          <option value="none">1 Month</option>
-                          <option value="none">2 Month</option>
-                          
-                          
+                                      
+                                     </div></li>
+                                   </ul>
+                                          <!--  <br> -->
+                                    <ul style="float: right; display: inline-block;">
+                                     <li style="list-style-type: none; "><div class="dropdown-container5">
+                                      <select class=" mt-1" name="category" id="category" >
+                                        <option value="none" selected disabled>Furnish</option>
+                                        <option value="none">Non Furnished</option>
+                                        <option value="none">Semi Furnished</option>
+                                        <option value="none">Fully Furnished</option>
+                                      </select>
+                                    </div></li>
+            
+                                   
+                                 <!--  <br> -->
+                                 <li style="list-style-type: none; ">
+                                  <div class="dropdown-container7">
+                                    <select class=" mt-1" name="category"  id="category">
+                                      <option value="none" selected disabled>BHK Type</option>
+                                      <option value="none">1 RK</option>
+                                      <option value="none">1 BHK</option>
+                                      <option value="none">2 BHK</option>
+                                      <option value="none">3 BHK</option>
+                                      <option value="none">4 BHK</option>
+                                      <option value="none">5 BHK</option>
+                                  </select>
+                                  
+                                   </div></li>
 
-                        </select>
-                          
-                         </div></li>
-                       </ul>
-                              <!--  <br> -->
-                        <ul class="floatright" style="float: left !important;">
-                         <li style="list-style-type: none;"><div class="dropdown-container5">
-                            <label>Furnishing :</label>
-                          <select name="furnish" id="furnish">
-                            <option value="none">Semi</option>
-                            <option value="none">Non</option>
-                            
-                            <option value="none">Fully</option>
+                                   <li style="list-style-type: none; "> <div class="dropdown-container6">
+                                    <select class="  mt-1" name="category"  id="category">
+                                      <option value="none" selected disabled>Property Age</option>
+                                      <option value="none">Below 5</option>
+                                      <option value="none">Below 5</option>
+                                      <option value="none">5-10</option>
+                                      <option value="none">10-15</option>
+                                      <option value="none">Above 15</option>
+                                  </select>
+                                  
+                                    </div>
+                                    <div class="lower mt-0" >
+                                    <a href="" class="mt-5" style=" float: right; color: red; " data-toggle="modal" data-target="#myModal"> ₹4500 Per Month Negotiable</a>           
+                                       </div>
+                                  </li></ul>
+                                        <br>
+                                </div>
+                               
+                                <!--category alined end here-->
 
-
-                          </select>
-                        </div></li>
-
-                       
-                     <!--  <br> -->
-                     <li style="list-style-type: none;">
-                      <div class="dropdown-container7">
-                        <label >BHK Type :</label>
-                            <select name="type" id="type">
-                              <option value="none">2 BHK</option>
-                            <option value="none">1 RK</option>
-                            <option value="none">1 BHK</option>
-                            
-                            <option value="none">3 BHK</option>
-                            <option value="none">4 BHK</option>
-                            <option value="none">5 BHK</option>
-                          </select>
-                      
-                       </div></li>
-                       <li style="list-style-type: none;"><div class="dropdown-container8">
-                        <label >Floor Preference :</label>
-                        <select name="preference" id="preference">
-                          <option value="none">4th</option>
-                          <option value="none">1st</option>
-                          <option value="none">2nd</option>
-                          <option value="none">3rd</option>
-                          
-                          <option value="none">5th</option>
-                          <option value="none">6th</option>
-
-                           </select>
-                        
-                         </div></li>
-                       <li style="list-style-type: none;"> <div class="dropdown-container6">
-                      <label >Property Age :</label>
-                        <select  name="age" id="age">
-                          <option value="none">5-10</option>
-                          <option value="none">Below 5</option>
-                          
-                          <option value="none">10-15</option>
-                          <option value="none">Above 15</option>
-                        </select>
-                        </div></li></ul>
-                            <br>
-                
-                        
-                      
-                     </div>
 
                     </div><!-----pp2 end------->
-                    <div>
+                  <!--   <div>
                         <div class="lowers">
                           <div class="lower" style="float: right !important; margin-top: 50px;">
                             <br><br>
                            <a href="" class="neg" style="color: red; " data-toggle="modal" data-target="#myModal"> ₹4500 Per Month Negotiable</a>
-                           <!-- <a href="#"> <i class="fa fa-info-circle" data-toggle="modal" data-target="#myModal"></i></a> -->
+                           <a href="#"> <i class="fa fa-info-circle" data-toggle="modal" data-target="#myModal"></i></a>
                             </div>
                         </div>
                       </div>
-
+ -->
             </div><!---col-8 end------->
 
 
@@ -780,13 +797,13 @@
       <nav aria-label="Page navigation example" style="margin-top: 15px;">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
+      <a class="page-link" href="#" tabindex="-1" style="color: #2ECAB6">Previous</a>
     </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#" style="color: #2ECAB6">1</a></li>
+    <li class="page-item"><a class="page-link" href="#"style="color: #2ECAB6">2</a></li>
+    <li class="page-item"><a class="page-link" href="#" style="color: #2ECAB6">3</a></li>
     <li class="page-item">
-      <a class="page-link" href="#">Next</a>
+      <a class="page-link" href="#" style="color: #2ECAB6">Next</a>
     </li>
   </ul>
 </nav>   
