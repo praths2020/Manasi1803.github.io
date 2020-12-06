@@ -82,19 +82,20 @@ height: 25px !important;
     margin-left: -25px!important
   }
   .filters, .sortby{
-                                        height: 25px !important;
-                                       }
+   height: 25px !important;
+   }
 }
 @media (max-width: 381px){
   .dropdown{
     margin-left: -35px!important
   }
   .filters, .sortby{
-                                        height: 25px !important;
+  height: 25px !important;
                                        }
 }
 
-.prem-filter .pre .newbtn{
+
+.prem-filter .pre1 .newbtn{
   background-color: red;
   color: white;
   border-radius: 10px;
@@ -102,10 +103,9 @@ height: 25px !important;
   outline: none; 
   font-size:9px;
   padding: 2px 5px; 
-  position: absolute;
-  top: 10% ; 
-  right: 15% ;
-  padding-bottom: 0;
+  position: relative;
+  padding-bottom: 0px;
+  border-bottom: -20px;
 }
 /*-----------------------navbar end------------------------------------------->*/
 /*------------------------all media queries-----------------------------*/
