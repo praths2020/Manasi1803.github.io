@@ -8,6 +8,9 @@ body {
   background: #f1f3f6;
 }
 
+input[type=checkbox] ,a{
+cursor: pointer;
+}
 
 
 
@@ -91,6 +94,56 @@ height: 25px !important;
                                        }
 }
 
+.prem-filter .pre .newbtn{
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none; 
+  font-size:9px;
+  padding: 2px 5px; 
+  position: absolute;
+  top: 10% ; 
+  right: 15% ;
+  padding-bottom: 0;
+}
+/*-----------------------navbar end------------------------------------------->*/
+/*------------------------all media queries-----------------------------*/
+/* check box mv */
+@media  (max-width: 465px) {
+  .checkbox{
+    font-size: 11px;
+   
+  }
+}
+
+/* Category option mv */
+@media (min-width: 360px) and (max-width: 767px){
+  select{ 
+    font-size: 0.7em;
+  }
+}
+/* Negotiation and price */
+.price-nego{ 
+  display: flex;
+  justify-content: flex-end ;}
+
+@media   (min-width: 360px) and (max-width: 767px){
+  .negoo{
+    margin-right: 5px;
+    width: 20% !important;
+  }
+  .price-nego{
+    display: flex;
+    justify-content: flex-start !important;}
+  }
+@media (max-width: 576px){
+  .prem-filter .pre .newbtn{
+    right: 30% ;
+    top: 10%  ;
+  }
+}
+
 /*---------------------------left part start---------------------------------------------*/
 .sidebar ul,.rside ul 
 {
@@ -124,7 +177,7 @@ height: 25px !important;
 }
 
 .sidebar ul .cat-show.show,.sidebar ul .bhk-show.show1,.sidebar ul .pg-show.show2,
-.sidebar ul .floor-show.show3,.sidebar ul .fur-show.show4,.sidebar ul .pro-show.show5
+.sidebar ul .floor-show.show3,.sidebar ul .fur-show.show4,.sidebar ul .pro-show.show5,.sidebar ul .bal-show.show6,.sidebar ul .sup-show.show7,.sidebar ul .gated-show.show8,.sidebar ul .amn-show.show9,.sidebar ul .ostay-show.show10,.sidebar ul .meal-show.show11,.sidebar ul .ogender-show.show12
 {
   display: block;
 }
@@ -153,13 +206,44 @@ height: 25px !important;
   color: #17c3ad !important;
   
 }
+div.scroll {
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.myModal3 {
+/* bug fix - no overlay */    
+display: none;}
+
+.watermark {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+
+.content {
+  position: absolute; /* Position the background text */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+
+
+.ogender-show li:hover,
+.meal-show li:hover,
+.ostay-show li:hover,
+.amn-show li:hover,
+.gated-show li:hover,
+.sup-show li:hover,
+.bal-show li:hover,
 .pro-show li:hover,
 .fur-show li:hover,
 .floor-show li:hover,
 .pg-show li:hover,
 .bhk-show li:hover,
-.cat-show
- li:hover,
+.cat-show li:hover,
 .checkboxc > label:hover
 {
   background: #d5f6f2!important;
@@ -355,7 +439,27 @@ ul.breadcrumb li a:hover {
   font-size: 15px;
 }
 
+/* negotiation button */
+.negoo:hover{
+  font-weight: bolder;
+  color:#4b8a82 !important;
+  transition: all 150ms ease 0s;
+  
+ 
+}
 
+/* tooltip */
+.tooltip-inner {
+  border-radius: 5px;
+}
+.tooltip .arrow:before {
+  border-top-color: #333 !important;
+   }
+.tooltip .tooltip-inner {
+  background-color: #333;
+  font-size: 0.75rem;
+   }
+  /* tooltip end */
 
 /*---------------------------middle part end---------------------------------------------*/
 
@@ -381,7 +485,7 @@ ul.breadcrumb li a:hover {
   border-top: 1px solid #d2d7e2;
   padding: 0.7em 5%;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 0.85rem;
 }
 
 .features i {
@@ -392,6 +496,19 @@ ul.breadcrumb li a:hover {
 .fa-check{
   margin-right: 5px;
   
+}
+
+/* negotiation and price */
+
+.negoo{
+  margin-bottom:1px;
+  position: relative;
+  color: red;
+  cursor: pointer; 
+  font-weight: bolder; 
+  font-size: large;
+  text-align: center; 
+  width: 10%;
 }
 
 @media only screen and (max-width: 575px) {
